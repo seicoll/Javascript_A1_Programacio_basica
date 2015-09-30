@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Nombres primers</title>
+        <meta charset="UTF-8">
+        
+        <script>
+            var contador;
+            var primer;
+            var numero;
+            
+            //Recorrem els nombres de 1 a 100 i per cadaun comprovem si és primers
+            for (numero=1; numero<=100; numero++)
+            {
+                contador = 2;           //començarem provant si és divisible per 2 fins al numero-1
+                primer = true;          
+                
+                while ((primer) && (contador<numero)){   //Podriem millorar-ho fent (contador<numero/2)
+                    if (numero % contador == 0)
+                    {
+                        primer = false;
+                    }
+                    contador++;
+                }
+                
+                //Si el numero és primer el mostrem
+                if (primer)
+                {
+                    document.write(numero + "<br>");
+                }
+            }
+           
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

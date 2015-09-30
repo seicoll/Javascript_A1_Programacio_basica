@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Operacions Matemàtiques</title>
+       
+        <script>
+            do{
+                //Demanem l'entrada de dos números a l'usuari
+                var num1 = prompt("Introdueix el número 1",0);
+                var num2 = prompt("Introdueix el número 2",0);
+                
+                //Fem els càlculs
+                var suma = parseInt(num1) + parseInt(num2);         //Cal convertir els numeros a enters amb parseInt perquè sinó els concatena
+                var resta = num1 - num2;
+                var multiplicacio = num1*num2;
+                var divisio = num1/num2;
+            
+                //Mostrem el resultats
+                alert("Suma: " + suma + "\nResta: " + resta + "\nMultiplicació: " + multiplicacio + "\nDivisió: " + divisio);
+            } while (suma<1000);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

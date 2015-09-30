@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <title>Equacio segon grau </title>
+        <meta charset="UTF-8">
+        
+        <script>
+            var a = prompt("Introdueix el vador de a");
+            var b = prompt("Introdueix el vador de b");
+            var c = prompt("Introdueix el vador de c");
+            
+            var resultat1;
+            var resultat2;
+             
+            resultat1 = (-b + Math.sqrt(b*b-(4*a*c)))/(2*a);
+            //resultat1 = (-b + Math.sqrt(Math.pow(b,2)-(4*a*c)))/(2*a);
+            
+            resultat2 = (-b - Math.sqrt(b*b-(4*a*c)))/(2*a);
+            
+            if (isNaN(resultat1))
+            {
+                alert("Aquesta equació no té una solució real.");
+            }
+            else
+            {
+                alert("Els resultats d'aquesta equació són " + resultat1 + " i " +resultat2);
+            }
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
